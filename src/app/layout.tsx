@@ -1,30 +1,30 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+// import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 import localFont from 'next/font/local'
  
 // Font files can be colocated inside of `pages`
 const myFont = localFont({ src: '../../public/fonts/Chillow-PersonalUse.ttf',
-  variable: "--font-Chillow",
+  variable: "--font-Chillow-PersonalUse",
  })
 
  
 
  const myFontOne = localFont({ src: '../../public/fonts/Spot-Normal.ttf',
-  variable: "--font-Spot",
+  variable: "--font-Spot-Normal",
   weight: '400',
  })
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+// const geistSans = Geist({
+//   variable: "--font-geist-sans",
+//   subsets: ["latin"],
+// });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+// const geistMono = Geist_Mono({
+//   variable: "--font-geist-mono",
+//   subsets: ["latin"],
+// });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -40,7 +40,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         // className={`${myFont.variable} ${geistMono.variable} antialiased`}
-        className={`${myFontOne.variable} antialiased`}
+        className={`${myFont.variable} ${myFontOne.variable} antialiased`}
       >
         {children}
       </body>

@@ -14,6 +14,7 @@ const Navbar: React.FC = () => {
         <nav className="bg-cover bg-center" style={{ backgroundImage: 'url(https://g-ladalle.com/wp-content/uploads/2023/09/header-2x-1.png)' }}>
             <div className="flex justify-between items-center p-4">
                 <div className="flex space-x-4">
+                  
                     <a href="#la-carte" className="text-black">La Carte</a>
                     <a href="#concept" className="text-black">Concept</a>
                     <a href="#devenir-franchise" className="text-black">Devenir Franchise</a>
