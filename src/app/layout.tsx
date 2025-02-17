@@ -2,6 +2,20 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+import localFont from 'next/font/local'
+ 
+// Font files can be colocated inside of `pages`
+const myFont = localFont({ src: '../../public/fonts/Chillow-PersonalUse.ttf',
+  variable: "--font-Chillow",
+ })
+
+ 
+
+ const myFontOne = localFont({ src: '../../public/fonts/Spot-Normal.ttf',
+  variable: "--font-Spot",
+  weight: '400',
+ })
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -25,7 +39,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        // className={`${myFont.variable} ${geistMono.variable} antialiased`}
+        className={`${myFontOne.variable} antialiased`}
       >
         {children}
       </body>
