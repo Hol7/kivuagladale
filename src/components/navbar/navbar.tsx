@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
     };
 
     return (
-        <nav className="bg-cover bg-center h-28 " style={{ backgroundImage: 'url(https://g-ladalle.com/wp-content/uploads/2023/09/header-2x-1.png)' }}>
+        <nav className="bg-cover bg-center h-28 absolute z-10 w-full bottom-0 top-0" style={{ backgroundImage: 'url(https://g-ladalle.com/wp-content/uploads/2023/09/header-2x-1.png)' }}>
             <div className="hidden sm:visible md:flex justify-between items-center py-4 px-10">
                 <div className="flex space-x-4 text-textRed pb-14 gap-6 text-xl ">
                   
