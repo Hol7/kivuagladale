@@ -3,6 +3,8 @@
 import React, { useState } from 'react';
 import { Icon } from '@iconify/react';
 
+import Image from "next/image";
+
 const Navbar: React.FC = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -20,7 +22,7 @@ const Navbar: React.FC = () => {
                     <a href="#devenir-franchise" className="hover:cursor-pointer hover:text-textYellow ">Devenir Franchise</a>
                 </div>
                 <div className="flex justify-center flex-grow">
-                    <img src="https://g-ladalle.com/wp-content/uploads/2023/09/logo-gladalle.svg" alt="Logo" className="pt-4 mr-14 " />
+                    <Image src="https://g-ladalle.com/wp-content/uploads/2023/09/logo-gladalle.svg" width={100} height={40} alt="Logo" className="pt-4 mr-14 " />
                 </div>
                 <div className="flex space-x-4 pb-14 gap-6 text-textRed text-xl">
                     <a href="#une-question" className="hover:cursor-pointer hover:text-textYellow flex items-center">

@@ -13,7 +13,10 @@ export default {
         foreground: "var(--foreground)",
         textYellow: "#fab428",
         textRed:"#e04403",
-        textProduct:"#652f6c"
+        textProduct:"#652f6c",
+        bgProMenuEnfant:"#D0333A",
+        bgProMenuG4:"#AF1957",
+        bgProMenuTirami:"#84286B",
       },
     },
   },
