@@ -12,7 +12,8 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         textYellow: "#fab428",
-        textRed:"#e04403"
+        textRed:"#e04403",
+        textProduct:"#652f6c"
       },
     },
   },

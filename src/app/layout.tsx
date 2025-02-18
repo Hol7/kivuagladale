@@ -7,6 +7,7 @@ import localFont from 'next/font/local'
 // Font files can be colocated inside of `pages`
 const myFont = localFont({ src: '../../public/fonts/Chillow-PersonalUse.ttf',
   variable: "--font-Chillow-PersonalUse",
+  weight: '400',
  })
 
  

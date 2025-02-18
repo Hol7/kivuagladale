@@ -1,5 +1,6 @@
 import HeroSection from "@/components/heroSection/herosection";
 import Navbar from "@/components/navbar/navbar";
+import Products from "@/components/product/product";
 import Service from "@/components/service/service";
 import VideoSection from "@/components/video/video";
 import Image from "next/image";
@@ -11,6 +12,7 @@ export default function Home() {
       <HeroSection/>
       <Service/>
       <VideoSection/>
+      <Products/>
 
     </div>
   );

@@ -9,9 +9,9 @@ const Card: React.FC<CardProps> = ({ title, imageUrl }) => {
     return (
         <div className="bg-white rounded-md w-full sm:w-[340px]">
             <div className="h-14 flex justify-center items-center transform -rotate-6 text-black bg-opacity-50 p-2">
-                <p className="text-3xl text-textRed">
+                <h3 className="text-3xl text-textRed">
                     {title}
-                </p>
+                </h3>
             </div>
 
             <div
